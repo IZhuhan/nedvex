@@ -191,41 +191,32 @@ img{
 .capabilities .capabilities-description .capabilities-list .capabilities-item span:last-child{
     line-height: 18px;
 }
-.capabilities .capabilities-img{
-    margin: auto 0;
-	position: relative;
+.capabilities .capabilities-description{
+    padding-right: 15px;
 }
-.capabilities .capabilities-img img{
-	box-shadow: 0 0 30px rgba(0,0,0,.3);
+.capabilities .capabilities-slider .capabilities-img{
+    display: none;
 }
-.capabilities .capabilities-img img + img{
-	margin-left: 48px;
-}
-.capabilities .capabilities-img img:nth-child(2){
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%) translateY(-8%);
-    margin: 0;
+.capabilities .capabilities-slider{
+    margin-right: -150px;
 }
 @media (max-width: 991px){
-    .capabilities .capabilities-img{
-        margin: auto;
+    .capabilities .capabilities-slider{
+        margin: auto 0 auto auto;
     }
-    .capabilities .capabilities-img img:first-child,    
-    .capabilities .capabilities-img img:last-child{
+    .capabilities .capabilities-slider .capabilities-img{
+        display: flex;
+    }
+    .capabilities .capabilities-slider .dg-container{
         display: none;
     }
-    .capabilities .capabilities-img img:nth-child(2){
-        position: static;
-	    transform: translateX(0) translateY(0);  
-    }
 }
-@media (max-width: 767px){
+@media (max-width: 599px){ 
+    .capabilities .capabilities-slider .capabilities-img{
+        display: none;
+    }
     .capabilities .capabilities-description{
         max-width: 100%;
-    }
-    .capabilities .capabilities-img img:nth-child(2){
-        display: none; 
     }
 }
 /********* CAPABILITIES END ********/
