@@ -6,7 +6,7 @@ var sld = function() {
         interval: 5000
     });
   } else {
-    slider.destroy;
+    slider.gallery.destroy;
   }
 };
 sld();
